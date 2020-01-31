@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Version>1.0.0</Version>
+    <Description>NLog AzureTableTarget to Azure Table Storage OR Azure CosmosDB Tables</Description>
+    <Authors>Kai Wang</Authors>
+    <CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
+    <Copyright>Copyright (c) $(CurrentYear) - Kai Wang</Copyright>
+
+    <PackageTags>NLog;azure;CloudTable;cosmos;cosmosdb;documentdb;table;storage;log;logging</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/kai-wang-/NLog.Extensions.AzureTable</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/kai-wang-/NLog.Extensions.AzureTable.git</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>Official release</PackageReleaseNotes>
+    <PackageIconUrl />
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>NLog.Extensions.AzureTable</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.6.8" />
+    <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="1.0.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
