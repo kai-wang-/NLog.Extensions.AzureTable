@@ -23,3 +23,10 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
       working-directory: src
+    - name: pack
+      uses: brandedoutcast/publish-nuget@v2.5.5
+      with:
+        PROJECT_FILE_PATH: src
+        INCLUDE_SYMBOLS: true
+      if: "false" 
+       
